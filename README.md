@@ -1,6 +1,6 @@
 # MatchMyRoomie
 
-MatchMyRoomie aims to help you find the perfect Roomate!
+MatchMyRoomie aims to help you find the perfect Roommate!
 
 
 # Table of Content 
@@ -18,7 +18,7 @@ MatchMyRoomie is an application that helps you find the ideal roommate based on 
 
 # Limitation 
 
-The algorithm is currently limited to displaying the perfect Roomate in the Area of the City of Madrid 
+The algorithm is currently limited to displaying the perfect Roommate in the Area of the City of Madrid out of the pull of users on the platform.
 
 
 # Installation 
