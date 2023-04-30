@@ -69,13 +69,12 @@ The user will now have to enter their choice. After their choice is validated, t
 
 # Further Improvements
 
+After completing the project and running tests, we identified several improvements that can be made in order to improve user experience and also the quality of the service provided. 
 
-
-
-
-
-
-
+- An important improvement would be attaching the back-end to a front-end that will allow the user to navigate through the process more easily on an html. 
+- Currently, everytime the user finishes an action, the main menu immediately pops up. A further improvement to improve the user experience would be to not immediately allow the main menu to come back but ask the user if he wishes to exit or go back to the main menu to proceed with another action. 
+- In terms of quality of service, the compatibility and matchmaking algorithm could give more weight to important questions such as budget, neighborhood, smoking etc. In case the users are not compatible in the 'important' categories, then the match will not be valid. With that improvement, the matches with intersections on the additional questions will be matched, after ensuring that the answers in the required categories are aligned. This will improve the quality of the matches. 
+- Attach an integrated communication tool that will pop up after the match is made for the potential roommates to communicate. 
 
 
 
