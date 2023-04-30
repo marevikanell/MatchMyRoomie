@@ -59,9 +59,12 @@ The user will now have to enter their choice. After their choice is validated, t
       - There are two choices regarding updating of profile. The user can either update his password or redo the questionnaire in case his preferences and status has changed. 
      
       - When the user starts the questionnaire process: 
-            - One question will be asked everytime and the answer will be valided 
-            - **User Input** : These are the answers of the filled out questionaire of the user (the                                 questions have to be answered using the keyboard, the majority will be multiple                               choice and will require the typing of the respective number)
-            - **Output** : Depending on the option that the user typed, rommate options that best match the                      user's preferences will be displayed. If there is more than one match, all of                          them will be displayed accorind to priority. The users that share no                                  intersections will be filtered out. 
+      
+           - One question will be asked everytime and the answer will be valided 
+            
+           - **User Input** : These are the answers of the filled out questionaire of the user (the                                 questions have to be answered using the keyboard, the majority will be multiple                               choice and will require the typing of the respective number)
+            
+           - **Output** : Depending on the option that the user typed, rommate options that best match the                      user's preferences will be displayed. If there is more than one match, all of                          them will be displayed accorind to priority. The users that share no                                  intersections will be filtered out. 
 
 
 # Further Improvements
