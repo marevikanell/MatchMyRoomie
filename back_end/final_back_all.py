@@ -37,6 +37,7 @@ def log_in():
     # Validate username and password
     if username in users:
         if password == users[username]["password"]:
+            print("")
             print("You have successfully logged in!")
         else:
             print("Incorrect password! Please retype your username & password.")
@@ -187,7 +188,10 @@ def max_heap(logged_in):
     # Get a list of all compatible users who have the same highest priority value
     compatible_users = display_compatible_users_with_priority(list_intersections, highest_priority)
 
-    print("You are compatible with users having the highest priority value: ", compatible_users)
+    print("")
+    print("You are compatible with: ", compatible_users)
+    email = input("Please enter your email address to receive the contact details of your match: ")
+    
 
 
 # edit your profile 
@@ -209,7 +213,8 @@ def re_do_questionnaire():
 # RUNNING THE PROGRAM:
     
 def menu_1():
-    print("Welcome to the Roommate Matching Program! Please select one of the following options:")
+    print("Welcome to MatchMyRoomie! Please select one of the following options:")
+    print("")
     print("1. Create an account")
     print("2. Log in")
     
@@ -225,9 +230,13 @@ def menu_1():
         menu_2()
 
 def menu_2():
+
+    print("")
+    print("Welcome Back to the Main Menu! Press '5' if you wish to exit the program!")
+    print("")
     print("1. Edit your password")
-    print("2. Do the questionnaire")
-    print("3. Re-do the questionnaire")
+    print("2. Fill in the questionnaire to find your perfect match")
+    print("3. Re-do the questionnaire and update your profile")
     print("4. See your matches")
     print("5. Exit the program")
     
@@ -246,10 +255,11 @@ def menu_2():
         print("Your answers have been updated! You can check your new matches now!")
         menu_2()
     elif option == "4":
+        print("")
         do_match()
         menu_2()
     elif option == "5":
-        print("Thank you for using the Roommate Matching Program! See you soon!")
+        print("Thank you for using MatchMyRoomie! See you soon!")
 
 
 menu_1()
