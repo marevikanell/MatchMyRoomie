@@ -47,19 +47,21 @@ The user will now have to enter their choice. After their choice is validated, t
 
 1. Creating an account: Our create account function has the purpose of enabling the user to create an account to find the perfect roomate 
 
-      - **User input** : A username and a password, if the username already exist the         programm will ask the user to choose a valid username 
+      - **User input** : A username and a password, if the username already exist the         programm will ask the user to choose another username 
       - Once the user has created an account ,they are able log in and complete the           questionnaire to find compatible roommates.
 
-2. Log into your account: Our main menu functions helps the user to navigate through the whole process 
+2. Log into your account: The user will first be asked to log in with his username and password. After the log in has been validated and completed succesfully, the user will be moved to the main menu functions which helps navigate through the whole process.
       
-      -It will start by displaying a list with all available options that the user          can choose from. The user will be asekd to choose one option by typing the            proper number on his/her keyboard
+      - It will start by displaying a list with all available options that the user          can choose from. The user will be asekd to choose one option by typing the            proper number on his/her keyboard
       
-      - The login menu will be displayed with options such as updating your profile,         filling out the questionare and accsessing your matches.
+      - The main menu will be displayed with options such as: updating your profile,         filling out the questionnaire and accsessing your matches.
       
+      - There are two choices regarding updating of profile. The user can either update his password or redo the questionnaire in case his preferences and status has changed. 
      
-      - **User Input** :These are the answers of the filled out questionaire of the user (the                                 questions have to be answered using the keyboard, they will be multiple                               choice)
-
-      - **Output** : Depending on the option that the user typed, rommate options that best match the                      user's preferences will be displayed. If there is more than one match, all of                          them will be displayed accorind to priority. The users that share no                                  intersections will be filtered out. 
+      - When the user starts the questionnaire process: 
+            - One question will be asked everytime and the answer will be valided 
+            - **User Input** : These are the answers of the filled out questionaire of the user (the                                 questions have to be answered using the keyboard, the majority will be multiple                               choice and will require the typing of the respective number)
+            - **Output** : Depending on the option that the user typed, rommate options that best match the                      user's preferences will be displayed. If there is more than one match, all of                          them will be displayed accorind to priority. The users that share no                                  intersections will be filtered out. 
 
 
 # Further Improvements
