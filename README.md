@@ -34,7 +34,7 @@ To download the library type the following command
 - pip install pickle 
 - pip install heapq
 
-Now that we have the required libraries set up, open the file named app.py and run the program.
+Now that we have the required libraries set up, open the file named final_back_all.py and run the program.
 
 # Usage
 
