@@ -69,14 +69,15 @@ def get_user_input(question_data):
             print(f"  {i + 1}. {option}")
 
         # Get user's input and convert it to the corresponding option
-        answer_idx = int(input()) - 1
-
-        # Validate the user's input
-        while answer_idx < 0 or answer_idx >= len(options):
-            print("Please enter a valid option number:")
-            answer_idx = int(input()) - 1
-
-        answer = options[answer_idx]
+        while True:
+            try:
+                answer_idx = int(input().strip()) - 1
+                if answer_idx < 0 or answer_idx >= len(options):
+                    raise ValueError
+                answer = options[answer_idx]
+                break
+            except ValueError:
+                print("Please enter a valid number:")
 
     return answer
 
@@ -95,13 +96,13 @@ def run_questionnaire(username):
     {"question": "How often do you have guests or friends over?", "question_type": "multiple-choice", "options": ["Rarely", "Occasionally", "Frequently"]},
     {"question": "Do you prefer a quiet or a lively living environment?", "question_type": "multiple-choice", "options": ["Quiet", "Lively", "Depends on my mood"]},
     {"question": "How important is privacy to you?", "question_type": "multiple-choice", "options": ["Not important", "Little important", "Important", "Very important"]},
-    {"question": "What are your hobbies and interests?", "question_type": "multiple-choice", "options": ["Reading", "Watching TV", "Exercise", "Traveling", "Music", "Other"]},
+    {"question": "What are your hobbies and interests? Select all that apply", "question_type": "multiple-choice", "options": ["Reading", "Watching TV", "Exercise", "Traveling", "Music", "Other"]},
     {"question": "Do you play any musical instruments?", "question_type": "multiple-choice", "options": ["Yes", "No"]},
-    {"question": "How do you usually spend your weekends or free time?", "question_type": "multiple-choice", "options": ["Studying", "Chilling with friends", "Going out", "Exercising", "Movie night", "Other"]}, 
+    {"question": "How do you usually spend your weekends or free time? Select all that apply", "question_type": "multiple-choice", "options": ["Studying", "Chilling with friends", "Going out", "Exercising", "Movie night", "Other"]}, 
     {"question": "What is your preferred move-in date?", "question_type": "multiple-choice", "options": ["June", "August", "September", "January"]},
     {"question": "What is your ideal lease duration?", "question_type": "multiple-choice", "options": ["Month-to-month", "3-6 months", "6-12 months", "12+ months"]},
-    {"question": "What is your budget for rent and utilities?", "question_type": "multiple-choice", "options": ["200-500", "500-700", "700-900","900-1200","1200-1500","1500+"]},
-    {"question": "What is your preferred location or neighborhood?", "question_type": "multiple-choice", "options": ["Sol", "Chueca", "Malasana", "Salamanca", "La Latina", "Lavapies", "Arguelles", "Chamberi", "Retiro", "Chamartin", "Tetuan"]},
+    {"question": "What is your budget for rent and utilities? Select all that apply", "question_type": "multiple-choice", "options": ["200-500", "500-700", "700-900","900-1200","1200-1500","1500+"]},
+    {"question": "What is your preferred location or neighborhood? Select all that apply", "question_type": "multiple-choice", "options": ["Sol", "Chueca", "Malasana", "Salamanca", "La Latina", "Lavapies", "Arguelles", "Chamberi", "Retiro", "Chamartin", "Tetuan"]},
     {"question": "Do you prefer living with people of the same gender or are you open to a mixed-gender living situation?", "question_type": "multiple-choice", "options": ["Same gender", "Mixed gender", "No preference"]},
     {"question": "What type of accommodation are you looking for?", "question_type": "multiple-choice", "options": ["Apartment", "House", "Shared room", "Private room"]},
 ]
@@ -158,6 +159,9 @@ def matchmaking(logged_in):
             #print(f"Intersection between {username} and the first user: {intersection}")
     return list_intersections
 
+
+
+
 def do_match():
     logged_in = start()
     if logged_in:
@@ -192,7 +196,6 @@ def max_heap(logged_in):
     print("You are compatible with: ", compatible_users)
     email = input("Please enter your email address to receive the contact details of your match: ")
     
-
 
 # edit your profile 
 
