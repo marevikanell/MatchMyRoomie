@@ -85,7 +85,6 @@ This project was created for our Algorithms and Data Structures course at IE Uni
 - VICTORIA VOLMAN
 - NEAL LASOWSKI 
 - MARIA EVRYDIKI KANELLOPOULOU
-- JENNA HATEM SOBHY TIEBY
 - RAKEL ÓSK SIGURÐARDÓTTIR
 
 
