@@ -2,13 +2,13 @@
 
 MatchMyRoomie aims to help you find the perfect Roommate!
 
-
 # Table of Content 
 
 1. Introduction 
-2. Installation & Usage 
-3. Further Improvements 
-4. Credits 
+2. Repository Content Description
+3. Installation & Usage 
+4. Further Improvements 
+5. Credits 
 
 # Introduction
 
@@ -16,10 +16,16 @@ This application was created for our Algorithms & Data Structures class. The pro
 
 MatchMyRoomie is an application that helps you find the ideal roommate based on a questionnaire. The application calculates the number of intersections between users and generates a max heap algorithm to match roommates based on shared interests and preferences. The questionnaire gathers information about users' lifestyle, habits, and preferences, and uses this information to determine which users are most compatible. Users can browse through their matches and contact potential roommates to find their perfect match.
 
-# Limitation 
+# Repository Content Description
 
-The algorithm is currently limited to displaying the perfect Roommate in the Area of the City of Madrid out of the pull of users on the platform.
+To be able and execute this developed project, read the following descriptions of the content of the repository. Download the following files and the libraries required by the installation section. 
 
+## user_
+
+This file is a 'pickle', a database where all the current users from the user testing we have conducted are stored. is the 
+## MatchMyRoomie Algorithm.py 
+
+"MatchMyRoomie Algorithm" is a python file that includes all the code required to run the program. It includes, in a modularized way, all the necessary functions 
 
 # Installation 
 
@@ -36,7 +42,7 @@ To download the library type the following command
 
 Now that we have the required libraries set up, open the file named final_back_all.py and run the program.
 
-We have developed this project on a **Mac OS Silicone...**
+We have developed this project on a **macOS Ventura**
 
 # Usage
 
