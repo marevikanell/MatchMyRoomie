@@ -28,9 +28,9 @@ This file is a 'pickle', a database where all the current users from the user te
 
 This is a python file which includes the code to reset the pickle, meaning to clean its content. If you wish to use this project for your own database, make sure to reset the pickle before starting to input your users, so the compatibility algorithm can iterate over the users of your environment. 
 
-## MatchMyRoomie Algorithm.py 
+## matchmyroomie_algorithm.py 
 
-Lastly, "MatchMyRoomie Algorithm" is a python file that includes all the code required to run the program. It includes, in a modularized way, all the necessary functions: signin, login, questionnaire, matchmaking algorithm etc. The file includes a "menu" functions that allows you to run the program in the correct sequence: signin or login, questionnaire, editing of profile, viewing of matches, exit. 
+Lastly, matchmyroomie_algorithm.py is a python file that includes all the code required to run the program. It includes, in a modularized way, all the necessary functions: signin, login, questionnaire, matchmaking algorithm etc. The file includes a "menu" functions that allows you to run the program in the correct sequence: signin or login, questionnaire, editing of profile, viewing of matches, exit. 
 
 # Installation 
 
