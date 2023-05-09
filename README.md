@@ -18,14 +18,19 @@ MatchMyRoomie is an application that helps you find the ideal roommate based on 
 
 # Repository Content Description
 
-To be able and execute this developed project, read the following descriptions of the content of the repository. Download the following files and the libraries required by the installation section. 
+To be able to execute this project, read the following descriptions on the content of the repository. Download the following files and the libraries required by the installation section. 
 
-## user_
+## users_data.pickle
 
-This file is a 'pickle', a database where all the current users from the user testing we have conducted are stored. is the 
+This file is a 'pickle', a database where all the current users from the user testing we have conducted are stored. It includes in a big hash table (dictionary), the users' username, password and answers to the questionnaire. Each user has its own dictionary where his personal data are stored. 
+
+## reset_pickle.py
+
+This is a python file which includes the code to reset the pickle, meaning to clean its content. If you wish to use this project for your own database, make sure to reset the pickle before starting to input your users, so the compatibility algorithm can iterate over the users of your environment. 
+
 ## MatchMyRoomie Algorithm.py 
 
-"MatchMyRoomie Algorithm" is a python file that includes all the code required to run the program. It includes, in a modularized way, all the necessary functions 
+Lastly, "MatchMyRoomie Algorithm" is a python file that includes all the code required to run the program. It includes, in a modularized way, all the necessary functions: signin, login, questionnaire, matchmaking algorithm etc. The file includes a "menu" functions that allows you to run the program in the correct sequence: signin or login, questionnaire, editing of profile, viewing of matches, exit. 
 
 # Installation 
 
@@ -35,7 +40,7 @@ Python programming language
 
 Libraries - In order to run our program, we make use of the following 3 libraries: heapq_max and pickle, heapq
 
-To download the library type the following command
+**To download the library type the following command**
 - pip install heapq_max 
 - pip install pickle 
 - pip install heapq
@@ -84,11 +89,9 @@ After completing the project and running tests, we identified several improvemen
 - In terms of quality of service, the compatibility and matchmaking algorithm could give more weight to important questions such as budget, neighborhood, smoking etc. In case the users are not compatible in the 'important' categories, then the match will not be valid. With that improvement, the matches with intersections on the additional questions will be matched, after ensuring that the answers in the required categories are aligned. This will improve the quality of the matches. 
 - Attach an integrated communication tool that will pop up after the match is made for the potential roommates to communicate. 
 
-
-
 # Credits 
 
-This project was created for our Algorithms and Data Structures course at IE University. The project was created by 
+This project was created for our Algorithms and Data Structures course at IE University. The project was created by: 
 
 - VICTORIA VOLMAN
 - NEAL LASOWSKI 
