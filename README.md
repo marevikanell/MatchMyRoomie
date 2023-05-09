@@ -36,6 +36,8 @@ To download the library type the following command
 
 Now that we have the required libraries set up, open the file named final_back_all.py and run the program.
 
+We have developed this project on a **Mac OS Silicone...**
+
 # Usage
 
 After a user enters our platform, they will be welcomed and asked what steps they want to take: 
